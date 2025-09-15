@@ -1,8 +1,6 @@
 resource "aws_s3_bucket" "this" {
-  for_each = toset(var.bucket_names)
 
-  bucket = each.value
-  acl    = "private"
+  bucket = var.bucket_name
 
   tags = var.tags
 }

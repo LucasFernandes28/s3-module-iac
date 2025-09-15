@@ -1,6 +1,6 @@
-variable "bucket_names" {
-  type        = list(string)
-  description = "Lista de nomes dos buckets a criar"
+variable "bucket_name" {
+  type        = string
+  description = "Nome do bucket a se criar"
 }
 
 variable "tags" {
